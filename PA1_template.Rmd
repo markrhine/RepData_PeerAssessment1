@@ -8,7 +8,7 @@ by: Mark Rhine
 
 
 ```{r}
-setwd("C:/Users/Mark Account/Documents/Software/Coursera/Reproducible Research")
+setwd("C:/Users/Mark Account/Documents/Software/Github/ReproduceResearchProject1/RepData_PeerAssessment1")
 #turns off scientific notation
 options(scipen=999)
 ```
@@ -267,7 +267,6 @@ plot(meanStepInt2$time[meanStepInt2$dayWeek == "weekend"], meanStepInt2$averageS
 ```
 
 The graph shows a few differences in the average daily activity on weekdays vs. weekends. On weekends, the activity starts later in the morning and increases at a more gradual rate. Probably because the subject did not have to wake up at the same time to go to work on the weekends. Also, throughout the day, there seems to be more activity. Again, probably because the subject was not at a desk at work. Lastly, the activity seemed to died down for the day at a later time. This means the subject was probably staying up later because it was a weekend. 
-
 
 
 

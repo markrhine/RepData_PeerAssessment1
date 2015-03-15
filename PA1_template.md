@@ -1,10 +1,15 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 by: Mark Rhine
 
 
 
 ```r
-setwd("C:/Users/Mark Account/Documents/Software/Coursera/Reproducible Research")
+setwd("C:/Users/Mark Account/Documents/Software/Github/ReproduceResearchProject1/RepData_PeerAssessment1")
 #turns off scientific notation
 options(scipen=999)
 ```
@@ -82,7 +87,7 @@ hist(sumOfStepsPerDay$sumSteps, main = "Number of Steps Per Day",
      xlab = "Number of Steps", ylab = "Frequency (# of Days)")
 ```
 
-![](PA1_template_files/figure-html/Histogram1-1.png) 
+![plot of chunk Histogram1](figure/Histogram1-1.png) 
 
 We can see that the distribution is approximately normal. It is not skewed left or right. By far, the highest frequency was a range of 10,000 - 15,000 steps. With a distribution that is not skewed, we can use the mean or median to describe the average. 
 
@@ -148,7 +153,7 @@ plot(avgStepsPerInterval2$time, avgStepsPerInterval$avgSteps, type = "l",
      main = "Average Number of Steps Per Interval", xlab = "Interval", ylab = "# of Steps")
 ```
 
-![](PA1_template_files/figure-html/AvgDailyActivityPattern-1.png) 
+![plot of chunk AvgDailyActivityPattern](figure/AvgDailyActivityPattern-1.png) 
 
 As shown, on average, the first 5 hours of the day showed very little activity. This makes sense as it is early morning and the subjects were likely sleeping. The average activity quickly picked up from there until 10 am. It then leveled off during the day but with moderate amount of activity. On average, at around 8:00 pm, activity slowly tapered to almost 0 as people were likely going to bed.
 
@@ -236,7 +241,7 @@ hist(NewStepsPerDay$sumSteps, main = "Number of Steps Per Day",
      xlab = "Number of Steps", ylab = "Frequency (# of Days)")
 ```
 
-![](PA1_template_files/figure-html/Histogram2-1.png) 
+![plot of chunk Histogram2](figure/Histogram2-1.png) 
 
 The mean and median were also calculated.
 
@@ -319,10 +324,9 @@ plot(meanStepInt2$time[meanStepInt2$dayWeek == "weekend"], meanStepInt2$averageS
      main = "Weekend Average Activity Patterns", xlab = "Time Interval", ylab = "# of Steps")
 ```
 
-![](PA1_template_files/figure-html/AvgDailyActivityPattern2-1.png) 
+![plot of chunk AvgDailyActivityPattern2](figure/AvgDailyActivityPattern2-1.png) 
 
 The graph shows a few differences in the average daily activity on weekdays vs. weekends. On weekends, the activity starts later in the morning and increases at a more gradual rate. Probably because the subject did not have to wake up at the same time to go to work on the weekends. Also, throughout the day, there seems to be more activity. Again, probably because the subject was not at a desk at work. Lastly, the activity seemed to died down for the day at a later time. This means the subject was probably staying up later because it was a weekend. 
-
 
 
 
